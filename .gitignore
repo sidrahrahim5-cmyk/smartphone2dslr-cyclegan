@@ -13,7 +13,6 @@ env/
 
 # Dataset 
 dataset/
-data/
 
 # Model checkpoints
 checkpoints/

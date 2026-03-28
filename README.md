@@ -125,15 +125,15 @@ python train.py
 
 ---
 
-## 📊 Dataset
+## Dataset
 
-**DPED Dataset** — Digital Photo Enhancement Dataset
+**Oxford Flowers102** — processed into two unpaired domains
 
-- **Domain A:** iPhone flower photos (smartphone quality)
-- **Domain B:** Canon DSLR flower photos (professional quality)
-- **Training:** ~1800 smartphone + ~3326 DSLR images
-- **Unpaired:** CycleGAN does not need paired examples ✅
-
+- **Domain A (Smartphone style):** Flowers102 with blur, noise, reduced contrast
+- **Domain B (DSLR style):** Flowers102 with sharpening, enhanced contrast, rich colors
+- **Training:** ~900 images per domain
+- **Source:** `torchvision.datasets.Flowers102` (no manual download needed)
+- **Unpaired:** CycleGAN does not require paired examples
 ---
 
 ## 📄 Citation
